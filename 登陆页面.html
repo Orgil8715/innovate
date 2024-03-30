@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <titlpwde>深度学习医学CT图像处理系统</titlpwde>
+    <style>
+        html {
+            background: url(backpct2.png) no-repeat center center fixed;
+            background-size: cover;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+
+            color: #333;
+            height: 100vh; /* Full height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h2 {
+            text-align: center;
+            color: #205375; /* 专业的蓝色调 */
+            margin: 20px 0;
+        }
+        form {
+            width: 90%; /* Adjusted for mobile responsiveness */
+            max-width: 400px;
+            margin: 0 auto; /* Centering the form */
+            padding: 20px;
+            background-color: #ffffffdd; /* Slightly transparent white */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        input[type=text], input[type=password] {
+            width: calc(100% - 22px); /* Adjusted width to account for padding and borders */
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: block; /* Make inputs block level to fill form width */
+        }
+        button {
+            display: block; /* Ensure button fills form */
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px; /* Space from the last input */
+            border: none;
+            border-radius: 5px;
+            background-color: #2081C3;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #166D9B;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h2>基于深度学习的医学CT图像伪影消除</h2>
+    <form id="registrationForm">
+        <label for="username">用户名称:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">用户密码:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">登陆</button>
+    </form>
+</div>
+<script src="add.js"></script>
+</body>
+</html>
+

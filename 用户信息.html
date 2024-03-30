@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+    <style>
+        html {
+            background: url(backpct2.png) no-repeat center center fixed;
+            background-size: cover;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            /*background-color: rgba(240, 242, 245, 0.85); !* 轻松的背景颜色，增加透明度以展示背景图 *!*/
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+        }
+        h2, h3 {
+            color: #205375; /* 专业的蓝色调 */
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .window {
+            background-color: #ffffffdd; /* Slightly transparent white */
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+            max-width: 400px; /* Adjust size to match form style */
+            width: 90%;
+        }
+        img {
+            max-width: 100%; /* Adjust image size to fit window */
+            height: auto;
+            display: block;
+            margin: 0 auto 20px; /* Center image */
+        }
+        form {
+            margin-top: 10px;
+        }
+        input[type="file"] {
+            margin: 10px 0;
+        }
+        button {
+            display: block;
+            width: 100%;
+            background-color: #2081C3;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #166D9B; /* 鼠标悬停时的按钮颜色 */
+        }
+        #menu {
+            width: 100%;
+            background-color: #333; /* 设置导航栏背景颜色为深灰色 */
+            overflow: hidden; /* 防止菜单项溢出 */
+            margin-bottom: 20px; /* Added space */
+        }
+        #menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        #menu ul li {
+            display: inline-block;
+        }
+        #menu ul li a {
+            display: block; /* 将链接元素显示为块级元素 */
+            color: white; /* 设置链接文本颜色为白色 */
+            text-align: center; /* 文本居中对齐 */
+            padding: 14px 20px; /* 设置链接内边距 */
+            text-decoration: none; /* 移除链接下划线 */
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h2>深度学习医学图像处理系统</h2>
+    <div id="menu">
+        <ul>
+            <li><a href="#">基本信息</a></li>
+            <li><a href="#">图像处理</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+    </div>
+    <h3>用户信息</h3>
+    <div class="window">
+        <p>头像:</p>
+        <img src="./picture/jnulogo.png" alt="用户头像">
+        <p>id: 2021180128</p>
+        <p>姓名: 张峰</p>
+        <p>年龄: 20</p>
+        <p>性别: 男</p>
+        <p>出生年月: 2004/01/02</p>
+        <p>身份证号码:</p>
+        <p>联系方式:</p>
+    </div>
+</div>
+</body>
+</html>

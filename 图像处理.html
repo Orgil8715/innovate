@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图像处理</title>
+    <style>
+        html {
+            background: url(backpct2.png) no-repeat center center fixed;
+            background-size: cover;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h3, p {
+            margin: 10px 0;
+            color: #205375; /* 专业的蓝色调 */
+            text-align: center;
+        }
+        form {
+            background-color: #ffffffdd; /* Slightly transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        input[type="file"], input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f2f5; /* Match the body background for a cohesive look */
+            transition: border 0.3s;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #2081C3; /* Adjust to match button style */
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #166D9B;
+        }
+        input[type="file"]:hover, input[type="text"]:hover {
+            border: 1px solid #888;
+        }
+        img {
+            max-width: 80%; /* Adjust this to control the displayed image size */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<p>上传图片</p>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*">
+    <input type="text" id="fname1" name="fname1" placeholder="噪声">
+    <input type="text" id="fname2" name="fname2" placeholder="分辨率">
+    <input type="text" id="fname3" name="fname3" placeholder="伪影">
+    <input type="text" id="fname4" name="fname4" placeholder="数值">
+    <input type="submit" value="提交">
+</form>
+<h3>输出结果</h3>
+<img src="./picture/jnulogo.png" alt="Backend Image">
+</body>
+</html>
